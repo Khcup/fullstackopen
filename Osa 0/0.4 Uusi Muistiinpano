@@ -23,4 +23,4 @@ Selain suorittaa vastaanotetun main.js-koodin
 joka hakee JSON-datan palvelimelta.
 end note
 selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
-palvelin-->selain: [{"content":"q tal","date":"2023-01-16T11:02:58.854Z"},...]
+palvelin-->selain: [{"content":"tere","date":"2023-01-16T11:02:58.854Z"},...]
