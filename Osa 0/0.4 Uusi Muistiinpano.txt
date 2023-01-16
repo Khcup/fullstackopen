@@ -1,0 +1,26 @@
+note over selain:
+
+Lomakkeen Save-painikkeen painamisen jälkeen
+selain lähettää palvelimelle lomakkeelle
+syötetyn datan HTTP POST-pyynnöllä.
+end note
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+palvelin-->selain: POST-pyynnöstä huolehtiva palvelimen koodi
+note over palvelin: 
+Palvelin kehottaa selainta tekemään uuden
+HTTP GET-pyynnön osoitteeseen /notes.
+end note
+selain->palvelin: POST-pyynnön data (req.body)
+palvelin-->selain: Uudelleenohjauspyyntö HTTP 302
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin-->selain: main.js
+note over selain:
+Selain suorittaa vastaanotetun main.js-koodin
+joka hakee JSON-datan palvelimelta.
+end note
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: [{"content":"q tal","date":"2023-01-16T11:02:58.854Z"},...]
