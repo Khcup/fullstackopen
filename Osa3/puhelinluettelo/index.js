@@ -100,7 +100,7 @@ const error_handler = (err, req, res, next) => {
 }
 app.use(error_handler)
 
-const PORT = process.env.PORT||3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 })
