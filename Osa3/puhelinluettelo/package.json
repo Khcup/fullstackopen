@@ -1,4 +1,3 @@
-
 {
   "name": "puhelinluettelo",
   "version": "1.0.0",
@@ -20,11 +19,5 @@
   },
   "devDependencies": {
     "eslint": "^8.36.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Khcup/fullstackopen/tree/main/Osa%203/puhelinluettelo"
-  },
-  "author": "Khcup",
-  "license": "ISC"
+  }
 }
